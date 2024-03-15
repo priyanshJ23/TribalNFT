@@ -1,0 +1,92 @@
+.body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 80vh;
+	font-family: 'Jost', sans-serif;
+	background-image: url("https://i.seadn.io/gae/qxvynIqLvCh_P3M3njdIyrCe52VoNV2hTsUlitS4VZ8jHd7PMMOHDH7cIpGaiBijORWEknoal9Bhmun2HZfNcEI35u3o93D1rROgd_I?auto=format&w=1000");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.main{
+	width: 350px;
+	height: 500px;
+	background: red;
+	overflow: hidden;
+	background: url("https://cdnb.artstation.com/p/assets/images/images/052/004/767/original/yurii-ray-06-gif-export-200.gif?1658731969");
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px #000;
+}
+#chk{
+	display: none;
+}
+.signup{
+	position: relative;
+	width:100%;
+	height: 100%;
+}
+.lab{
+	color: #fff;
+	font-size: 2.3em;
+	justify-content: center;
+	display: flex;
+	margin: 60px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+.input{
+	width: 60%;
+	height: 3rem;
+	background: #5c115c;
+	display: flex;
+    align-items: center;
+	margin: 20px auto;
+    color: white;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+
+#button{
+    background-color: initial;
+    background-image: linear-gradient(#8614f8 0, #760be0 100%);
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: rgba(245, 244, 247, .25) 0 1px 1px inset;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 60px;
+    line-height: 60px;
+    margin-left: -4px;
+    outline: 0;
+    text-align: center;
+    transition: all .3s cubic-bezier(.05, .03, .35, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: bottom;
+    width: 130px;
+}
+.divButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.extra{
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+	
+
+}
