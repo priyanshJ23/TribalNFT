@@ -35,7 +35,15 @@
       "react-app",
       "react-app/jest"
     ]
-  },
+  }, 
+     "resolutions": {
+      "**/react": "18.2.0",
+      "**/react-dom": "18.2.0"
+    },
+    "peerDependencies": {
+      "react": "^18.0.0"
+    },
+  
   "browserslist": {
     "production": [
       ">0.2%",
