@@ -31,7 +31,7 @@ const Login = () => {
 
 
    const login = () => {
-    axios.post("http://localhost:9002/login" , user)
+    axios.post("https://tribalnft.onrender.com/login" , user)
     .then(res => {
       if( alert(res.data.message) == "Authentication Failed")
       alert(res.data.message)

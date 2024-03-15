@@ -28,7 +28,7 @@ const Signup = () => {
    const register = () => {
     const {name, email ,password}  = user
     if(name && email && password) {
-      axios.post("http://localhost:9002/Signup", user)
+      axios.post("https://tribalnft.onrender.com/Signup", user)
       .then(res => console.log(res))
     } else{
       alert("invalid input")
