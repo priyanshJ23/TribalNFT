@@ -5,23 +5,24 @@ const app = express();
 const dotenv = require("dotenv").config();
 
 // Load environment variables
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 5000;
 
 // MongoDB
-console.log(process.env.MONGODB_URL)
-mongoose.set('strictQuery', false)
+console.log(process.env.MONGODB_URL);
+mongoose.set('strictQuery', false);
 
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
+app.get("/", (req, res) => {
+  res.send("Server is live");
+});
+
 const start = async () => {
     try {
-        await mongoose.connect(process.env.MONGODB_URL, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-        });
+        await mongoose.connect(process.env.MONGODB_URL);
         app.listen(PORT, () => {
             console.log("BE started port", PORT);
         });
